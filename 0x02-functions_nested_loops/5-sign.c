@@ -4,19 +4,19 @@
  * print_sign - Checks if a number is
  * positive, negative or zero
  *
- * @c: ASCII value of the character
- * to be checked
+ * @n: Number to be checked
  *
- * Return: 1 if lowercase else 0
+ * Return: 1 if n > 1 or 0 if n is 0
+ * else -1
  */
-int print_sign(int c)
+int print_sign(int n)
 {
-	if (c > 0)
+	if (n > 0)
 	{
 		_putchar(43);
 		return (1);
 	}
-	else if (c == 0)
+	else if (n == 0)
 	{
 		_putchar(48);
 		return (0);
